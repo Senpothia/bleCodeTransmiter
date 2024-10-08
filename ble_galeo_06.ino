@@ -72,6 +72,7 @@ void loop() {
     }
   }
 
+
   sodaq_wdt_disable();
   sodaq_wdt_flag = false;
 
@@ -82,7 +83,7 @@ void loop() {
     processingScanBLE();  // scan initial
   }
 
-
+  sendAcq();
   // affichage tableau initial
   if (phase == 1) {
 
